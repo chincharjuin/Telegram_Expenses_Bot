@@ -1,0 +1,16 @@
+One transaction by UPDATEID
+
+  SELECT * FROM expenses WHERE updateid = UPDATEID
+
+All transactions with PERIOD with OWNER with AMOUNT with SHOP with LOCATION with PAYMENT with VERIFIED order by ORDER
+  PERIOD can be day, week, month, year, all
+  OWNER can be as many owners
+  ABOVE can be above or below
+  AMOUNT can be any integer above 0
+  SHOP can be any text
+  LOCATION can be any text
+  PAYMENT can be any text
+  VERIFIED can be TRUE or FALSE or NEITHER
+  ORDER can be date, amount, shop, location, payment 
+
+  SELECT * FROM expenses WHERE dt ? AND (owner ? OWNER or ...) AND amount ? AMOUNT AND shop ? SHOP AND location ? LOCATION AND payment ? PAYMENT AND verified ? VERIFIED
